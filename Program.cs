@@ -45,13 +45,13 @@ static double ValidarSalario(double salario)
         Console.Write("Salario inválido, digite novamente: ");
         salario = double.Parse(Console.ReadLine());
     }
-    return salario; // Retorna o valor lido para a variável 'salarioBruto'
+    return salario;
 }
 
 static double calcDescontoINSS(double salario)
 {
     if (salario > 3900) return salario * 0.14;
-    if (salario >= 3000) return salario * 0.12; // Ajustei a faixa para fazer sentido lógico
+    if (salario >= 3000) return salario * 0.12;
     if (salario >= 2500) return salario * 0.09;
     if (salario >= 1300) return salario * 0.075;
     return 0;
@@ -65,7 +65,7 @@ static double calcDescontoIRRF(double salario)
 
 static void ExibirFolha(string nome, double bruto, double inss, double irrf)
 {
-    double liquido = bruto - inss - irrf; // Cálculo aqui dentro para não precisar de variável global
+    double liquido = bruto - inss - irrf;
     Console.WriteLine("==========================");
     Console.WriteLine($"FOLHA: {nome}");
     Console.WriteLine($"Salário Bruto: {bruto:C}");
@@ -73,4 +73,5 @@ static void ExibirFolha(string nome, double bruto, double inss, double irrf)
     Console.WriteLine($"Desconto IRRF: {irrf:C}");
     Console.WriteLine("==========================");
     Console.WriteLine($"Salario Liquido: {liquido:C}");
+
 }
