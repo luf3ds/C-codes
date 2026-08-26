@@ -155,13 +155,13 @@ Este repositório reúne exercícios práticos desenvolvidos para reforçar conc
 ### 2. Clone o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/luf3ds/fundamentos-csharp.git
 ```
 
 ### 3. Acesse a pasta do projeto
 
 ```bash
-cd <NOME_DO_REPOSITORIO>
+cd fundamentos-csharp
 ```
 
 ### 4. Execute o arquivo desejado
