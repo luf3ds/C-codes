@@ -1,4 +1,4 @@
-# C# Exercise Collection
+# Coleção de Exercícios em C#
 
 Coleção de projetos desenvolvidos em **C#** com foco no aprendizado de lógica de programação, estruturas de dados, validações, programação orientada a objetos e manipulação de coleções com **LINQ**.
 
